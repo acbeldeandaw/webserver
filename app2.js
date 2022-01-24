@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
     res.send('Hello World')
 })
 
-app.get('/sal', function(req, res) {
+app.get('/saludo', function(req, res) {
     res.send('Buenas 2DAW')
 })
 
