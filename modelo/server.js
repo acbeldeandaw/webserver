@@ -36,10 +36,7 @@ class Server {
 
         this.app.post('/api', function(req, res) {
             const body = req.body;
-            let usuario = new Usuario({
-                "nombre": "Juan",
-                "correo": "juanito@juan.com"
-            });
+            let usuario = new Usuario(body);
             usuario.save();
             res.json({
                 ok: true,
